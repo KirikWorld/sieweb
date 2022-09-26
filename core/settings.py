@@ -49,9 +49,8 @@ MIDDLEWARE = [
     'core.middleware.Cors',
 ]
 
-CORS_ORIGIN_WHITELIST = [
-    'https://sieweb.netlify.app',
-]
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
 
 ROOT_URLCONF = 'core.urls'
 

@@ -50,7 +50,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    'https://sieweb.netlify.app/',
+    'https://sieweb.netlify.app',
 ]
 
 ROOT_URLCONF = 'core.urls'

@@ -1,13 +1,140 @@
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  height: 100vh;
+  width: 100vw;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+}
+
+.swap {
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 20px;
+  background: rgb(159, 182, 12);
+}
+
+.signup, .signin {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.signup button, input:not(:first-child), .signin button, input:not(:first-child){
+  margin-top: 20px;
+}
+
+.signup input, .signin input{
+  box-sizing: border-box;
+  font-size: 20px;
+  border: 1px solid black;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+.signup button, .signin button{
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 20px;
+  background: rgb(17, 215, 17);
+}
+
+.home{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.home header {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgb(41, 43, 49);
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.home header p{
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  color: whitesmoke;
+}
+
+.home header a{
+  position: absolute;
+  left: 20px;
+  color: whitesmoke;
+}
+
+.home header p b{
+  margin-left: 5px;
+}
+
+.home .blank{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .blank select{
+  font-size: 20px;
+  width: 70%;
+  height: 70px;
+}
+
+.home .blank input{
+  box-sizing: border-box;
+  font-size: 20px;
+  width: 70%;
+  height: 70px;
+}
+
+.home .blank button{
+  box-sizing: border-box;
+  margin-top: 15px;
+  font-size: 20px;
+  width: 150px;
+  height: 70px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: rgb(43, 228, 49);
+  transition: all .2s;
+}
+
+.home .blank button:hover {
+  transform: scaleX(1.1);
+}
+
+.home .blank button:active {
+  transform: scaleX(0.9);
 }
